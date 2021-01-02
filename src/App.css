@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__header {
+    display: flex;
+    background-color: #0f3057;
+    color: white;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__headerTitle {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__headerLogin {
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app__headerLogin > .MuiButton-root {
+    color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__headerLogin > .MuiButton-root:hover {
+    color: #f05454;
+}
+
+.app__body {
+    background-color: #e7e7de;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    flex: 1;
+}
+
+.app__sidebar {
+    padding: 40px;
+    flex: 0.3;
+}
+
+
+.app__seach {
+    display: flex;
+    color: white !important;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: #00587a;
+    box-shadow: 2px 5px 10px -1px rgba(0,0,0,0.75) !important;
+}
+
+
+.app__searchButton {
+    align-items: center;
+    display: flex;
+}
+
+.app__searchButton > button {
+    background-color: #00587a;
+    display: flex;
+    color: white !important;
+}
+
+.app__dropdown {
+    display: flex;
+    flex: 0.9;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.app__stocksContainer {
+    padding: 20px;
+    flex: 0.7;
+}
+
+.footer__socialLinks > .MuiSvgIcon-root {
+    color: white !important;
+}
+
+.footer__socialLinks > .MuiSvgIcon-root:hover {
+    color: #00587a;
+    cursor: pointer;
 }

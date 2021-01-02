@@ -1,0 +1,56 @@
+.card {
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+    box-shadow: 2px 5px 10px -1px rgba(0,0,0,0.75) !important;
+    transition: transform 100ms ease-in;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.card > .MuiSvgIcon-root {
+    position: relative;
+    float: right;
+    right: -5px;
+    bottom: -5px;
+    font-size: 1rem !important;
+    color: #0f3057;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;  
+}
+
+.card > .MuiSvgIcon-root:hover {
+    color: #008891;
+}
+
+.footer {
+    background-color: #008891;
+    color: white;
+    padding: 5px;
+    font-size: x-small;
+    text-align: center;
+
+}
+
+.card__info {
+    display: flex;
+}
+
+.card__infoChange {
+    display: flex;
+}
+
+.info__percentChange {
+    margin-left: 10px;
+}
+
+.card__volume {
+    display: flex;
+    margin-left: 10px;
+}
